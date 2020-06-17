@@ -2,8 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
 
@@ -13,12 +16,133 @@
       <div class="row grey"></div>
       <!-- fine background con margini -->
       <!-- container  -->
-      <div class="container">
+      <div class="container clearfix">
+
+        <!-- INIZIO NAVIFìGAZIONE -->
+        <!-- inizio barra di navigazione -->
+        <div class="navbar">
+          <!-- inizio profilo  -->
+          <div class="profile">
+            <img src="img/avatar_io.jpg" alt="avatar">
+            <ul>
+              <li><i class="fas fa-circle-notch"></i></li>
+              <li><i class="fas fa-comment-alt"></i></li>
+              <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+          </div>
+          <!-- fine profilo  -->
+          <!-- inizio barra notifica  -->
+          <div class="notify">
+            <span class="bell"><i class="far fa-bell-slash"></i></span>
+            <h2>Ricevi notifiche di nuovi messaggi</h2>
+            <p>Attiva modifiche deckstop</p>
+          </div>
+          <!-- fine barra notifica  -->
+          <!-- inizio barra ricerca  -->
+          <div class="search-bar">
+            <input type="text" placeholder="Cerca o inizia una nuova chat">
+            <i class="fas fa-search"></i>
+          </div>
+          <!-- fine barra ricerca  -->
+          <div class="contact">
+            <ul>
+              <li class="contact-item clearfix" contact-item="0">
+                <img src="img/avatar_1.jpg" alt="contact-figure">
+                <h2>Michele</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="1">
+                <img src="img/avatar_2.jpg" alt="contact-figure">
+                <h2>Fabio</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="2">
+                <img src="img/avatar_3.jpg" alt="contact-figure">
+                <h2>Samuele</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="3">
+                <img src="img/avatar_4.jpg" alt="contact-figure">
+                <h2>Alessandro B.</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="4">
+                <img src="img/avatar_5.jpg" alt="contact-figure">
+                <h2>Alessandro L.</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="5">
+                <img src="img/avatar_6.jpg" alt="contact-figure">
+                <h2>Claudia</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="6">
+                <img src="img/avatar_7.jpg" alt="contact-figure">
+                <h2>Davide</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+              <li class="contact-item clearfix" contact-item="7">
+                <img src="img/avatar_8.jpg" alt="contact-figure">
+                <h2>Federico</h2><span>17:50</span><br>
+                <p>Non poteva essere altrimenti</p>
+              </li>
+            </ul>
+
+          </div>
+          <!-- inizio sezione contatti  -->
 
       </div>
-      <!-- container  -->
-    </div>
+      <!-- fine barra di navigazione -->
+      <!-- FINE NAVIFìGAZIONE -->
 
+      <!-- INIZIO MAIN -->
+      <div class="main">
+        <!-- inizio chat contatto  -->
+        <div class="contact-chat clearfix">
+          <img src="img/avatar_1.jpg" alt="contact-chat">
+          <div class="contact-text">
+            <h2>Michele</h2>
+            <p>Ultimo accesso oggi alle 15:40</p>
+          </div>
+
+          <ul>
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-paperclip"></i></li>
+            <li><i class="fas fa-ellipsis-v"></i></li>
+          </ul>
+
+        </div>
+        <!-- fine chat contatto  -->
+        <!-- inizio chat -->
+        <div class="chat clearfix">
+          <div class="chat-container">
+            <ul class="chat-conversation">
+              <li class="my-chat">
+                <p>Ciao come stai?</p>
+                <span>17:44</span>
+              </li>
+              <li class="his-chat">
+                <p>Ciao come stai?</p>
+                <span>17:44</span>
+              </li>
+              <li class="my-chat">
+                <p>Ciao come stai?</p>
+                <span>17:44</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- fine chat -->
+        <!-- barra chat -->
+        <div class="chat-bar">
+          <i class="far fa-smile"></i>
+          <input placeholder="Scrivi un messaggio">
+          <i class="fas fa-microphone"></i>
+        </div>
+        <!-- fine barra chat -->
+      </div>
+    </div>
+      <!-- fine container  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript"src="js/script.js"></script>
   </body>
