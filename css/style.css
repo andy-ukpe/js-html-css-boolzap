@@ -32,35 +32,39 @@ input:focus::placeholder {
 .row.green{
   background-color: #009688;
   width: 100%;
-  height: 17vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.row.grey{
+/* .row.grey{
   background-color: #d6dbd7;
   width: 100%;
   height: 83vh;
-}
+} */
 /* fine background */
 
 /* container */
-.container{
+.container-app{
   background-color: red;
   width: 80%;
   height: 94%;
-  position: absolute;
-  margin: auto;
-  top: 21px;
-  left: 10%;
+  /* position: absolute; */
+  /* margin: auto; */
+  /* top: 21px;
+  left: 10%; */
+
+
 }
 /* navbar */
 .navbar{
-  width: 320px;
+  width: 35%;
   height: 100%;
   background-color: blue;
   float: left;
 }
 .profile{
   height: 55px;
-  width: 320px;
   background-color: #eaeaea;
 }
 .profile img{
@@ -91,7 +95,6 @@ input:focus::placeholder {
 /* barra notifiche */
 .notify{
   height: 55px;
-  width: 320px;
   background-color: #8edafc;
 }
 span.bell{
@@ -151,7 +154,7 @@ span.bell{
 .contact li{
   border-bottom: 1px solid #f5f5f5;
   border-right: 1px solid #f5f5f5;
-  width: 302px;
+  /* width: 302px; */
 }
 .contact .contact-item img{
   height: 70px;
@@ -180,7 +183,7 @@ span.bell{
 .main{
   float: left;
   height: calc(100% - 70px);
-  width: calc(100% - 320px);
+  width: calc(100% - 35%);
   background-color: #fafafa;
 }
 .contact-chat{
@@ -309,5 +312,12 @@ span.bell{
   padding-left: 30px;
   color: #a0a0a0;
 }
+/* .fa-paper-plane{
+  cursor: pointer;
+} */
 /* fine chat bar */
 /* fine container */
+/* template */
+.template{
+  display: none;
+}
