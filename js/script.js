@@ -113,5 +113,21 @@ $('.delate').click(function(){
   $(this).parents('.cloud').addClass('remove');
 
 })
+// funzione che selezionandola trasforma il background e lo collega alla schermo charset
+$('.contact-item').click(function(){
+  $('.contact-item').css("background-color", "#ffffff");
+  $(this).css("background-color", "#e9ebeb");
+    })
 
+  $('.contact-item').click(function(){
+    var contact = $(this).attr('data-contact');
+    console.log(contact);
+    $('.chat-conversation').removeClass('active');
+    var chat = '.chat-container ul[data-chat="' + contact +'"]';
+    $(chat).addClass('active');
+
+    var img = '.contact-chat img[data-img="' + contact + '"]';
+    $(img).addClass('active');
+    $('.contact-chat img').removeClass('active');
+})
 })
