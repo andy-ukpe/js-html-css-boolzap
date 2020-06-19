@@ -238,6 +238,27 @@ span.bell{
   margin: auto;
   margin-top: 30px;
 }
+.chat-conversation p{
+  position: relative;
+}
+.dropdown{
+  background-color: white;
+  padding: 10px;
+  height: 69px;
+  width: 120px;
+  box-shadow: 0px 6px 14px -1px rgba(0,0,0,0.75);
+  position: absolute;
+  top: 72%;
+  right: -1%;
+  z-index: 3;
+  display: none;
+}
+.chat-conversation .dropdown li{
+  list-style-type: none;
+  font-size: 12px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
 /* fine contact-chat */
 /* inizio chat */
 /* chat mittente */
@@ -250,18 +271,36 @@ span.bell{
   border-radius: 5px;
   position: relative;
 }
-.my-chat span{
+.time-send{
   font-size: 8px;
   color: #bbc3ba;
   right: 3px;
   bottom: 4px;
   position: absolute;
 }
+.chat-conversation .arrow{
+    position: absolute;
+    top: 18px;
+    left: 93%;
+    font-size: 10px;
+    /* color: #b1b1b1; */
+    color: red;
+    width: 10px;
+    margin-right: 0;
+    list-style-type: none;
+}
+.chat-conversation .arrow {
+  cursor: pointer;
+}
 .chat-container ul p{
   font-size: 15px;
   color: black;
 }
-.chat-container li{
+.chat-container .my-chat{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.chat-container .his-chat{
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -276,13 +315,7 @@ span.bell{
   border-radius: 5px;
   position: relative;
 }
-.his-chat span{
-  font-size: 8px;
-  color: #bbc3ba;
-  right: 3px;
-  bottom: 4px;
-  position: absolute;
-}
+
 .his-container ul p{
   font-size: 15px;
   color: black;
@@ -322,5 +355,11 @@ span.bell{
 /* fine container */
 /* template */
 .template{
+  display: none;
+}
+.active{
+  display: block;
+}
+.remove{
   display: none;
 }

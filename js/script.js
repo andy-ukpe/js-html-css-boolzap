@@ -97,6 +97,21 @@ $(document).ready(function(){
   }).hide();
 });
 
+// funzione ogni qual volta si fa un click sulla freccia appare il menu
+$('.arrow').click(function(){
+  $(this).children('.dropdown').toggleClass('active');
 
+  // funzione ogni qual volta si fa un click sulla freccia di un
+  // altro messaggio appare un nuovo menu
+  $('.arrow').click(function(){
+    $('.dropdown').removeClass('active');
+    $(this).children('.dropdown').toggleClass('active');
+  })
+})
+// funzione che cancella l'intero nuvoletta
+$('.delate').click(function(){
+  $(this).parents('.cloud').addClass('remove');
+
+})
 
 })
