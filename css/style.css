@@ -197,7 +197,6 @@ span.bell{
   border-radius: 50%;
   padding: 5px 4px;
   float: left;
-  display: none;
 }
 .contact-text{
   float: left;
@@ -288,10 +287,13 @@ span.bell{
     left: 93%;
     font-size: 10px;
     /* color: #b1b1b1; */
-    color: red;
+    color: lightgrey;
     width: 10px;
     margin-right: 0;
     list-style-type: none;
+}
+.chat-conversation .arrow:hover{
+  display: block;
 }
 .chat-conversation .arrow {
   cursor: pointer;

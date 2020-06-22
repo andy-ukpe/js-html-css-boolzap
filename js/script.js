@@ -126,8 +126,13 @@ $('.contact-item').click(function(){
     var chat = '.chat-container ul[data-chat="' + contact +'"]';
     $(chat).addClass('active');
 
-    var img = '.contact-chat img[data-img="' + contact + '"]';
-    $(img).addClass('active');
-    $('.contact-chat img').removeClass('active');
+// variabile per immagine chat contatto
+    var imgValue = parseInt(contact) + 1;
+    console.log(imgValue);
+    $('.contact-chat img').attr('src', "img/avatar_" + imgValue + ".jpg");
+
+    var nomeValue = $(this).children('h2').text();
+    console.log(nomeValue);
+    $('h2').text(nomeValue);
 })
 })
